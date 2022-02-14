@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-const home = () => {
+import Notes from './Notes'
+
+const Home = () => {
+  
+
   return (
     <div>
       <div className="container my-3">
@@ -21,17 +25,13 @@ const home = () => {
         </div>
               <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
-        <div className="my-3">
-          <h2>Your Notes</h2>
-        </div>
             
 
       </div>
-      
+      <Notes />
     </div>
   )
 }
 
-export default home
+export default Home
 
